@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form action="#">
+             <div class="amount">
+                <label for="enter-amount">Enter Amount</label>
+                <input id="enter-amount" value="100" type="text" placeholder="Enter amount">
+             </div>
+             <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select">
+                        <img src="https://flagfeed.com/country/US" alt="">
+                        <select name="from">
+                            <option value="USD">USD</option>
+                            <option value="IND">INR</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+                
+               <div class="converter">
+                <img src="converter-arrow.png" height="20px">
+               </div>
+
+                <div class="to">
+                     <p>To</p>
+                    <div class="select">
+                        <img src="https://flagfeed.com/country/IN" alt="">
+                        <select name="to">
+                            <option value="USD">USD</option>
+                            <option value="IND">INR</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+             <div id="output">
+                
+             </div>
+             <button id="btn">Get Exchange</button>
+        </form>
+    </div>
+    <script src="codelist.js"></script>
+    <script src="fetch.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: hwb(266 3% 87%);
+    color: white;
+}
+.container{
+    padding: 10px 20px;
+}
+span{
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+}
+main{
+    height: 95vh;
+    width: 96vw;
+    margin: auto;
+    border-radius: 4px;
+    
+}
+.nav{
+    display: flex;
+    padding: 3px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.screen-btn{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 4px;
+    width: 80px;
+    text-align: center;
+}
+.high-score{
+    width: 100px;
+}
+.display{
+    height:90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40px,1fr)) ;
+    grid-template-rows: repeat(auto-fill,minmax(40px,1fr));
+    border: 1px solid white;
+}
+.block{
+    border-radius: 50%;
+
+}
+.fill{
+    background-color: hsl(0, 100%, 70%);
+}
+.food{
+    background-color : rgb(203, 203, 9);
+    animation: food 1s infinite;
+}
+.btn-container{
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 95%;
+}
+.start,.game-over{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.start{
+    display: flex;
+}
+@keyframes food{
+    0%{
+        scale:0.9
+    }
+    50%{
+        scale:1.1
+    }
+    100%{
+        scale:0.9
+    }
+}
