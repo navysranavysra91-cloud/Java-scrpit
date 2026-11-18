@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+}
+
+body,
+html {
+  background-color: black;
+  color: white;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+button {
+  cursor: pointer;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.head-btn {
+  background-color: hsl(0, 0%, 20%);
+  padding: 5px 8px;
+  border-radius: 9px;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  color: white;
+}
+.board {
+  flex-grow: 1;
+  display: flex;
+  padding: 10px 20px;
+  width: 100%;
+  gap: 20px;
+}
+.column {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 15%);
+  gap: 10px;
+  transition: border 0.2s ease-in-out;
+}
+.heading {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.task {
+  background-color: #4d4d4d;
+  padding: 5px 10px;
+  cursor: grab;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.task button {
+  align-self: flex-end;
+  background-color: red;
+  padding: 3px 5px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+}
+.hover-over {
+  border: 1px dashed white;
+  transform: scale(1.02);
+}
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal.active{
+    display: flex;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+  background-color: hsl(0, 0%, 10%);
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  z-index: 1;
+}
+input,
+textarea {
+  background-color: hsl(0, 0%, 20%);
+  text-align: start;
+  border: none;
+  color: white;
+  resize: none;
+  height: max-content;
+  padding: 10px;
+  border-radius:5px;
+
+}
+.center button {
+  align-self: center;
+  width: 100px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 3px;
+  background-color: red;
+  color: white;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}

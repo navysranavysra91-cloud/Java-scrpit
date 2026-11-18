@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix.css" />
+    <link
+      rel="shortcut icon"
+      href="netflix-img/netfilx-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="head">
+      <nav>
+        <span><img src="netflix-img/logo.svg" width="52px" alt="" /></span>
+        <div class="lang-btn">
+          <select class="lang" title="Select-language">
+            <option value="en" id="lang">English</option>
+            <option value="hi" id="lang">Hindi</option>
+          </select>
+          <button class="sign">Sign-Out</button>
+        </div>
+      </nav>
+      <div class="subscription-banner"></div>
+      <div class="subscription-content">
+        <h1 style="text-transform: uppercase;;">Unlimited movies, TV shows, and more</h1>
+        <h4 style="text-transform: uppercase;">Watch anywhere. Cancel anytime.</h4>
+        <button class="register">REGISTER YOUR MEMBERESHIP</button>
+      </div>
+    </div>
+    <div class="seprate"></div>
+    <section class="movie-slot-section">
+      <h2>Trending Now</h2>
+      <div class="slot-section">
+        <button
+          class="nav-arrow left"
+          onclick="
+            document
+              .querySelector('.slot-cards')
+              .scrollBy({ left: -500, behavior: 'smooth' })
+          "
+        >
+          &#10094;
+        </button>
+        <div class="slot-cards">
+          <div class="card">
+            <span>1</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbOQuzRvnZQPXYecW3hndFaALIyAkrLjH5ydiac0j583yqhjGK4aIUeVARLs8ZswzScmesi3GL6JWcmkX3-WXOO0XzjSCrmHJRk.webp?r=3bb"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>2</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABW6KeRBSZtOnUtGeewijDUZd9_r-lHB0Djxi9tPcCL5VZP8X1d67iCz06WHtYqeCFeLjnLz2MQELYO1SrTzFRuC0GzPuyZ2i_8Y.webp?r=d19"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>3</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdiTQ-GTBneZYLOvbcDm3rhrSd4sstpmaLTYybMejEQT0f3zrSBEg_Pzsz-1xwCM3g66Yw3Ym_49ZlKrTL3qTC9xxMz1xdIevAm59CiMRgy-coV0eJ3Bgid5FStfmLsrARF0.webp?r=2c9"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>4</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTvl2DYHHWfkU6xEB82jaJc1Rf0uo7fci3tQ-IRoo0wEk92mTpDVB7an26haqhMslFxFRopR3vczBmQ6452Rp5hvcl1ZknXIoAk.webp?r=2cb"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>5</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABR89LEDUwa3jalDLuVvfvZtA5knJjCeiKMeSREjLt02VlA9cdUpj094s2uAtbXSvI2lgUb8M3XJKvOtUpAfGGFtXQ-pD1NggciHNEMyj7lyb-MhGQi91rN5jrlrJYkrCPrOk.webp?r=52e"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>6</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUet8hcKke_oXjU3AC4J8G-bc-HZP2ZY-Th80oBke3G3arUch8e3JG9vXVeu4xshLAQedlDlncuVlmHnSEoEsn0qxeq3qbjBGEtLB0Xz9eaa53Fzw6fqkUjUPHXyzajWW-Dx.webp?r=694"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>7</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVFoKFQCIknfSzm339t9BVYXl8jD9rRUUgwPZDjQAguB8Kz4U5d7aD7TFfNTELMtmnoFbqP99yi6Ikn95AKN4Np091ERqd_TTVk1XNi-NkYKFUM7o7laFXeTQaaCXJjm8YH4.webp?r=8dc"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>8</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY3zhaGG5IU0NWEmKgGUDGBXjVqWUjttMFyuYmNRY8jUbV9Kr7fJWYaJxovwD4NCStMkgof25tQwZagNZxCTFzJkbKBun1IUHd8.webp?r=0c9"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>9</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABW2RwM_Jtz37xU0oTdkF1S4yGMbJCay9Upa4CUGG29hv6E4CnNlQmsQL9zCXesQVPxW4tIIQAHZ7IdJp1NYEJXEspEAiDr1TwhO99hKtfG-CiqWvlU_haTjSnCNGvdPqzEYa.webp?r=36b"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <span>10</span>
+            <img
+              src="https://occ-0-4773-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbGYFNoxTLqH6v0tCHcGkXN_xsqkQrwWGpiKRFlwZTKJViDY2va8ngkYiIRrnDOiHW6gO-JmZ1k_e1rkQcKjMEYCyjKGrc4aAT8P81qxr52OIoflPgrGo-i9NaVgFFRAGWDZ.webp?r=76f"
+              alt=""
+            />
+          </div>
+        </div>
+        <button
+          class="nav-arrow right"
+          onclick="
+            document
+              .querySelector('.slot-cards')
+              .scrollBy({ left: 500, behavior: 'smooth' })
+          "
+        >
+          &#10095;
+        </button>
+      </div>
+    </section>
+    <div class="seprate"></div>
+    <section class="features">
+      <div class="features-detail-page">
+        <h2 style="padding-left: 56px; margin-bottom: 20px;">More Reasons to Join</h2>
+        <div class="features-section">
+          <div class="box b-1">
+            <div class="card-content">
+              <h3>Enjoy on your TV</h3>
+              <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+              <div class="card-icon">
+                <div class="image">
+                  <img src="netflix-img/computer.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box b-2">
+            <div class="card-content">
+              <h3>Download your shows to watch offline</h3>
+              <p>
+                Save your favorites easily and always have something to watch.
+              </p>
+              <div class="card-icon">
+                <div class="image">
+                  <img src="netflix-img/download.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box b-3">
+            <div class="card-content">
+              <h3>Watch everywhere</h3>
+              <p>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+              <div class="card-icon">
+                <div class="image">
+                  <img src="netflix-img/telescope.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box b-4">
+            <div class="card-content">
+              <h3>Create profiles for kids</h3>
+              <p>
+                Send kids on adventures with their favorite characters in a
+                space made just for them — free with your membership
+              </p>
+              <div class="card-icon">
+                <div class="image">
+                  <img src="netflix-img/children.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="seprate"></div>
+    <section class="qna-section">
+      <h2 style="padding-left: 38px;">Frequently Asked Questions</h2>
+      <div class="qna-section">
+        <div class="qna">
+          <p>What is Netflix?</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+        <div class="qna">
+          <p>How much Netflix Costs?</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+        <div class="qna">
+          <p>Where can i watch?</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+        <div class="qna">
+          <p>How do i cancel</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+        <div class="qna">
+          <p>What can i watch on Netflix?</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+        <div class="qna">
+          <p>Is Netflix good for Kids</p>
+          <div class="plus"><img src="netflix-img/plus.svg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <div class="seprate"></div>
+    <section class="login-section">
+      <div class="register-info">
+        <h2>
+          Ready to watch? Enter your email to create or restart your membership.
+        </h2>
+        <div class="register-btn">
+          <div class="r-1">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="r-2">
+            <button class="register">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Questions? Call <a href="tel:+916284501126">000-800-919-1743</a></h3>
+      <div class="footer-grid">
+        <div class="footer-content">
+          <a href="#" class="main-head">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-content">
+          <a href="#" class="main-head">Help Centre</a>
+          <a href="#">Jobs</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+        <div class="footer-content">
+          <a href="#" class="main-head">Account</a>
+          <a href="#">Ways to Watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+        <div class="footer-content">
+          <a href="#" class="main-head">Media Centre</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-details">NetflixIndia Introducted In 2006</div>
+    </footer>
+  </body>
+</html>

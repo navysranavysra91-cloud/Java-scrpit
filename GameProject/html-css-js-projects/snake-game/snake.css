@@ -1,3 +1,9 @@
+:root{
+    --base-font-color: white;
+    --main-background-color: hwb(266 3% 87%);
+    --snake-color: hsl(0, 100%, 70%);
+    --food-color: rgb(203, 203, 9);
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +11,8 @@
 }
 body{
     font-family: Helvetica, sans-serif;
-    background-color: hwb(266 3% 87%);
-    color: white;
+    background-color: var(--main-background-color);
+    color: var(--base-font-color);
 }
 .container{
     padding: 10px 20px;
@@ -34,7 +40,7 @@ main{
     margin: 10px 20px;
 }
 .screen-btn{
-    border: 1px solid white;
+    border: 1px solid var(--base-font-color);
     padding: 10px;
     border-radius: 4px;
     width: 80px;
@@ -49,17 +55,17 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(40px,1fr)) ;
     grid-template-rows: repeat(auto-fill,minmax(40px,1fr));
-    border: 1px solid white;
+    border: 1px solid var(--base-font-color);
 }
 .block{
     border-radius: 50%;
 
 }
 .fill{
-    background-color: hsl(0, 100%, 70%);
+    background-color: var(--snake-color);
 }
 .food{
-    background-color : rgb(203, 203, 9);
+    background-color : var(--food-color);
     animation: food 1s infinite;
 }
 .btn-container{

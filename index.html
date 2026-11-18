@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Internal and External Linking</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <button id="btn">DARK</button>
-    <script src="index.js"></script>
+    <div class="first">
+        <h1 id="top">web page</h1>
+        <h2>Internal Linking</h2>
+        <a href="#about">Go to about</a>
+        <a href="#contact">Go to contact</a><br>
+    </div>
+    <div class="second">
+        <h2 id="about">About</h2>
+        <p>this section contains information about the website.</p>
+        </p>
+    </div>
+    <div class="info">
+        <a href="#top">Back to top</a> <br>
+        <h2 id="contact">Contact</h2>
+        <p>email: example@example.com</p>
+        <a href="#top">Back to top</a> 
+    </div>
 </body>
 </html>
